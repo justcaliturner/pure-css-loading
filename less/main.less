@@ -41,27 +41,28 @@
 	-ms-transform: rotate(@deg);
 	-webkit-transform: rotate(@deg);
 	-o-transform: rotate(@deg);
-	-moz-transform: rotate(@deg);	
+	-moz-transform: rotate(@deg);
+	opacity: 0;
 }
 .delaytime (@delaytime:0s) {
 	animation:loadinganimation 1.2s linear @delaytime infinite;
 	-webkit-animation:loadinganimation 1.2s linear @delaytime infinite;
 }
 @-webkit-keyframes loadinganimation {
-	from {opacity:0;}
-	to {opacity:1;}
+	from {opacity:1;}
+	to {opacity:0;}
 }
 @-o-keyframes loadinganimation {
-	from {opacity:0;}
-	to {opacity:1;}
+	from {opacity:1;}
+	to {opacity:0;}
 }
 @-moz-keyframes loadinganimation {
-	from {opacity:0;}
-	to {opacity:1;}
+	from {opacity:1;}
+	to {opacity:0;}
 }
 @keyframes loadinganimation {
-	from {opacity:0;}
-	to {opacity:1;}
+	from {opacity:1;}
+	to {opacity:0;}
 }
 .rotate1 {
 	.loading_rotate;
